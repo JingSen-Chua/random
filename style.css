@@ -1,68 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Montserrat'
 }
 
-header {
-    height: 10vh;
-    background-color: #5D737E;
+.meal-btn {
+  margin: 4em auto;
+  width: 85%;
+  text-align: center;
+  background: rgba(169, 201, 186, 0.33);
+  border-radius: 25px;
+  padding: 3em 0;
 }
 
-header h3 {
-    font-size: 4em;
-    text-align: center;
-    margin: 0;
-    height: 100%;
-    padding-top: 60px;
-    font-weight: bold;
-    color: white;
+.meal-btn-text {
+  text-align: center;
+  font-size: 3.5em;
 }
 
-.main-question {
-    height: 30vh;
-}
-.main-question h1 {
-    position: relative;
-    font-size: 7em;
-    text-align: center;
-    padding: 0 20px;
-    top: 25%;
-}
+@keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
 
-.option {
-    height: 20vh;
-}
-
-.anything {
-}
-
-.anything h3{
-    color: white;
-    position: relative; 
-    left: 25%;
-    width: 50%;
-    font-size: 4em;
-    text-align: center;
-    background-color: #5D737E;
-    padding: 50px 20px;
-    font-weight: bold;
-}
-
-.anything p {
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: lighter;
-}
-
-.random p {
-    font-size: 4em;
-    text-align: center;
-}
-
-.choice {
-    font-size: 6em;
-    text-align: center;
-    padding-top: 50px;
-}
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

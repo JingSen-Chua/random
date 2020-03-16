@@ -2,34 +2,51 @@
 <html>
 <head>
   <meta charset="utf-8">
-
-  <title>What you want to eat?</title>
+  <title>Random Meal</title>
   <meta name="description" content="">
   <meta name="author" content="">
-
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h3>What's for dinner?</h3>
-    </header>
-    <div class="main-question">
-      <h1>So... What would you like to eat?</h1>
+    <div class="intro" style="width: 80%; margin: 0 auto; padding-top:10em;" >
+        <h1 class="title" style="font-size: 6em; text-align: center; margin-bottom: 0; color: #456254">Random Meal</h1>
+        <p class="title-desc" style="font-size: 3em; font-weight: light; text-align: center; margin-top: 0; margin-bottom:2em;color: #434645;" >Solving an age-old crisis.</p>
+        <img src="confused.jpg" style="width: 50%; left: 25%; position: relative; border-radius: 30px;">
+        <p style="font-size: 3em; text-align: center; margin-top: 1em; margin-bottom: 2em;color: #434645;" >Can't decide what to eat?<br>let me decide for you!</p>
+        <div class="continue-btn" style ="width: fit-content; background: rgba(169, 201, 186, 0.5); border-radius: 50px; padding: 5em 10em; margin: 0 auto;">
+            <span style="font-weight: 600; font-size: 3em; color: #434645;">CONTINUE</span>
+        </div>
     </div>
-    <div class="option">
-      <div class="anything">
-        <h3 class="anything-btn">Anything lah....</h3>
-        <br>
-        <p>A random choice of dish / cuisine</p>
+    <div class="header" style="display:none;"><h2 style="font-weight:bold; color:#456254; font-size: 4em; padding-left: 0.5em;">Random Meal</h2></div>
+    <div class="content" style="display:none;">
+      <h3 style="font-size:5em; color: #434645; text-align: center; font-weight: 400; padding-bottom: 0.5em;">Which meal are you having?</h3>
+      <div class="meal-btn" id="breakfast" onClick="selection()">
+        <span class="meal-btn-text">Breakfast</span>
+      </div>
+      <div class="meal-btn" id="lunch" onClick="selection()">
+        <span class="meal-btn-text">Lunch</span>
+      </div>
+      <div class="meal-btn" id="dinner" onClick="selection()">
+        <span class="meal-btn-text">Dinner</span>
+      </div>
+      <div class="meal-btn" id="supper" onClick="selection()">
+        <span class="meal-btn-text">Supper</span>
+      </div>
+      <div class="meal-btn" id="dessert" onClick="selection()">
+        <span class="meal-btn-text">Dessert</span>
       </div>
     </div>
-    <div class="random">
-      <p>Orh... Then we are eating...</p>
-      <h3 class="choice"></h3>
+    <div class="choice" style="display:none; text-align: center; height: 80vh;">
+      <h1 style="font-size:5em; font-weight:bold; color:#456254; padding: 2em 0 1em 0; text-transform: capitalize;" id="mealChoice"></h1>
+      <p style="font-size:5em; margin-bottom: 0;">You are having...</p>
+      <h3 style="font-size:5em; color:#456254; margin-top: 0;" id="randomSelection">&nbsp;</h3>
+      <div class="random-btn" style ="width: fit-content; background: rgba(169, 201, 186, 0.5); border-radius: 50px; padding: 5em 10em; margin: 0 auto; position: relative; top: 20%;">
+        <span style="font-size:3em; font-weight: 600; color:#434645">Random!</span>
+      </div>
+      <div style="position: relative; top: 30%;"><span id ="back-btn" style="color:#456254; font-weight: bold; font-size: 3em;">Go back to menu...</span></div>
     </div>
   <script src="app.js"></script>
 </body>
